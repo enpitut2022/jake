@@ -37,12 +37,33 @@
       75%  { transform: translate(0%, 0%) rotate(0deg); }
       100% { transform: translate(0%, 0%) rotate(0deg); }
     }
+
+    .contents {
+    width: 100% ;
+    height: 100%;
+    background-color: transparent;
+    position: relative;
+    }
+
+    .layer-img {
+      position: relative;
+      top: 20%;
+      bottom: 50%;
+      left: 80%;
+    }
+
   </style>
   <script src="{% static 'js/common.js' %}"></script>
 </head>
 <body>
   <div class="shadow"></div>
-  <img id="mitarashi" class="korokoro" src="{% static 'images/mitarashi_denkidai.png' %}" width="300" height="300">
+  <img id="mitarashi" class="korokoro" src="{% static 'images/mitarashi_denkidai.png' %}" width="600" height="600">
+  <!-- <div class="layer">
+    <div class="layer-in"> -->
+  <div class="contents"><img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></div>
+    <!-- </div>> -->
+  <!-- </div>
+  </div> -->
   <script>
     // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
     looopAnimation("mitarashi", "korokoro", 100);

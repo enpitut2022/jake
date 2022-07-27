@@ -4,7 +4,39 @@ body {
   background: linear-gradient(to bottom, #fbf9eb 55%, #f1eed6 55%, #fbf9eb 100%);
 }
 
+/* .contents {
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.layer-img {
+  top: 0 !important;
+  bottom: 0!important;
+  right: 0 !important;
+  margin: auto 0 !important;
+  position: absolute !important;
+} */
+
+
 img, div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+/* div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+} 
+
+.korokoro, .shadow{
   position: absolute;
   top: 0;
   left: 0;
@@ -21,4 +53,17 @@ img, div {
   background-color: #e6e1bb;
   transform: scale(1.0, 0.2);
   -webkit-transform: scale(1.0, 0.2);
+} */
+
+/* .contents {
+  width: 100% !important;
+  height: 100vh !important;
 }
+
+.layer-img {
+  top: 0 !important;
+  bottom: 0!important;
+  right: 0 !important;
+  margin: auto 0 !important;
+  position: absolute !important;
+} */
