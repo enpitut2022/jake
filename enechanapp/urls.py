@@ -7,5 +7,6 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 app_name = 'enechanapp'
 urlpatterns = [
     #path('index/', views.IndexView.as_view(), name='index'),
-    path('', views.IndexView.as_view(), name='index'),
+    path('', views.NormalView.as_view(), name='normal'),
+    path('dead/', views.DeadView.as_view(), name='dead'),
 ]
