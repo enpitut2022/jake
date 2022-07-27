@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'enechanapp.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database
