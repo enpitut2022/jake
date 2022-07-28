@@ -7,3 +7,6 @@
 __pycache__/
 db-volumes/
 db.sqlite3
+enechanapp/__pycache__/
+.hiroki
+config/__pycache__
