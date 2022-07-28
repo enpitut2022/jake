@@ -17,6 +17,24 @@ body {
   position: absolute !important;
 } */
 
+.esa {
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 1300;
+  bottom: 0;
+  
+}
+
+.fukidashi {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  
+}
 
 img, div {
   position: absolute;
