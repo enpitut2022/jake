@@ -17,7 +17,7 @@ class NormalView(TemplateView):
 class EnechanCreateFormView(FormView):
     template_name = "../templates/enechanform.html"
     form_class = forms.EnechanFormClass
-    success_url = reverse_lazy('angry')
+    success_url = reverse_lazy('normal')
 
 class AngryView(TemplateView):
     template_name = 'purun.html'
