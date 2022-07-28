@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, CreateView
 #from flask import template_rendered
 #from regex import template
 from django.shortcuts import render
@@ -21,3 +21,11 @@ class EnechanCreateFormView(FormView):
 
 class AngryView(TemplateView):
     template_name = 'purun.html'
+
+class PostView(CreateView):
+    template_name = 'post_create.html'
+    form_class = forms.PostFrom
+    success_url = reverse_lazy('post:post_create_complete')
+
+class PostCompleteView(TemplateView):
+    template_name = 'post_create_complete.html'
