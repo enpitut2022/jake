@@ -62,13 +62,14 @@ body {
   left: 0;
   right: 1300;
   bottom: 0;
-
+}
 
 .botan{
-  position: relative;
-  top: 10%;
-  bottom: 45%;
-  left: 0.005%;
+  position: absolute;
+  top: 10;
+  bottom: 45;
+  left: 0;
+  right: 1300;
 }
 
 
