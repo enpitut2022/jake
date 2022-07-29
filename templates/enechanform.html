@@ -45,7 +45,8 @@
 
   <body>
     <div class="shadow"></div>
-    <img id="mitarashi" class="korokoro" src="{% static 'images/mitarashi_denkidai.png' %}" width="600" height="600">
+    <img id="mitarashi" class="korokoro" width="600" height="600">
+    <!-- <img src="{% static 'images/fukidashi_oshiete.jpg' %}" class="fukidashioshiete" width="300" height="300"> -->
     <div class="form_layer">
     <h1>どんな節電したん？</h1>
     <!-- フォームを定義 -->
@@ -58,6 +59,7 @@
     <script>
         // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再
         looopAnimation("mitarashi", "korokoro", 100);
+        getImage("mitarashi");
     </script>
 
   </body>

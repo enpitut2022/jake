@@ -22,3 +22,10 @@ img, div {
     left: 70%;
     bottom: 20%;
 }
+
+.fukidashioshiete {
+  position: absolute;
+  top: 40px;   
+  left: 30px;
+  bottom: 20px; 
+}
