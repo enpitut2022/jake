@@ -5,7 +5,7 @@ from django.shortcuts import render
 from . import forms
 from django.views.generic import FormView
 from django.urls import reverse_lazy
-
+from . import models
 class DeadView(TemplateView):
     template_name = 'purupuru.html'
 
@@ -25,11 +25,12 @@ class AngryView(TemplateView):
 class PostView(CreateView):
     template_name = 'post_create.html'
     form_class = forms.PostFrom
-    success_url = reverse_lazy('post_create_comlete')
+    success_url = reverse_lazy('post_list')
 
 class PostCompleteView(TemplateView):
     template_name = 'post_create_complete.html'
 
-# class PostListView(ListView):
-#     template_name = 'post_list.html'
-#     model = Post
+class PostListView(ListView):
+    template_name = 'post_list.html'
+    model = models.Post
+

@@ -13,4 +13,5 @@ urlpatterns = [
     path('enechanform/angry',views.AngryView.as_view(), name='angry'),
     path('post/', views.PostView.as_view(), name='post_create'),
     path('post/complete/', views.PostCompleteView.as_view(), name="post_create_comlete"),
+    path('post/list/', views.PostListView.as_view(), name='post_list'),
 ]

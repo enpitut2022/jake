@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for object  in post_list %}
+<p>
+    {{ object.date }}
+    {{ object.text}}
+</p>
+{% endfor %}
+<a href="{% url 'normal' %}">ホームに戻る</a>
+</body>
+</html>
