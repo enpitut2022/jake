@@ -4,88 +4,22 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <link rel="stylesheet" href="{% static 'css/common.css' %}">
-  <style>
-    /* CSSアニメーションの設定 */
-    .korokoro {
-      -webkit-animation: korokoro 2.5s linear 0s 1;
-      animation-name: korokoro 2.5s linear 0s 1;
-    }
-    @-webkit-keyframes korokoro {
-      0%   { -webkit-transform: translate(0%, 0%); }
-      5%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-      25%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
-      30%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
-      35%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
-      45%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
-      50%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
-      60%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
-      65%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
-      75%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
-      100% { -webkit-transform: translate(0%, 0%) rotate(0deg); }
-    }
-
-    @keyframes korokoro {
-      0%   { transform: translate(0%, 0%); }
-      5%   { transform: translate(10%, 0%) rotate(10deg); }
-      25%  { transform: translate(20%, 0%) rotate(20deg); }
-      30%  { transform: translate(-10%, 0%) rotate(-10deg); }
-      35%  { transform: translate(-15%, 0%) rotate(-15deg); }
-      45%  { transform: translate(10%, 0%) rotate(10deg); }
-      50%  { transform: translate(15%, 0%) rotate(15deg); }
-      60%  { transform: translate(-5%, 0%) rotate(-5deg); }
-      65%  { transform: translate(-7%, 0%) rotate(-7deg); }
-      75%  { transform: translate(0%, 0%) rotate(0deg); }
-      100% { transform: translate(0%, 0%) rotate(0deg); }
-    }
-
-    .contents {
-    width:  100% ;
-    height: 100%;
-    background-color: transparent;
-    position: relative;
-    }
-
-    .layer-img {
-      position: relative;
-      top: 20%;
-      bottom: 50%;
-      left: 80%;
-    }
-
-    /* .pic_frame {
-      display: inline-block;
-      text-align: center;
-    }
-
-    table{
-      text-align: center;
-    } */
-
-  </style>
   <script src="{% static 'js/common.js' %}"></script>
 </head>
   <body>
     <!--  エネちゃんの画像 -->
-    <!-- <img id="mitarashi" class="korokoro" src="{% static 'images/happy_earth.png' %}" width="400" height="400"> -->
     <img id="mitarashi" class="korokoro" width="400" height="400">
     <img id="fukidashi" class="fukidashi" width="500" height="200">
     <img class="fukidashi_bird" src="{% static 'images/fukidashi_bird.png' %}"  width="200" height="200">
 
 
     <!-- ポストの画像 -->
-    <div class="contents">
-      <a href="{% url 'post_create' %}"><img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></a>
-    </div>
-
+     <a href="{% url 'post_create' %}"><img src="{% static 'images/post.png' %}" class="post" width="300" height="500"></a>
+    
     <!-- 節約ボタン -->
-    <!-- <div class="balloon3">
-      節約報告
-    </div> -->
-    <div class = "pic_frame">
-      <a href="{% url 'enechanform' %}"><img src="{% static 'images/setuyaku.png' %}" class="esa" width="200" height="200">
+      <a href="{% url 'enechanform' %}"><img src="{% static 'images/setuyaku.png' %}" class="botan" width="230" height="300">
       </a>
-      <p class="pic_frame2"> 節約報告</p>
-    </div>
+
 
     <script>
       // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生

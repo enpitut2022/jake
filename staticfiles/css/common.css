@@ -4,49 +4,48 @@ body {
   background: linear-gradient(to bottom, #fbf9eb 55%, #f1eed6 55%, #fbf9eb 100%); /*後ろの背景を徐々にグラデーションしている*/
 }
 
-/* .contents {
-  width: 100% !important;
-  height: 100vh !important;
+/* CSSアニメーションの設定 */
+.korokoro {
+  -webkit-animation: korokoro 2.5s linear 0s 1;
+  animation-name: korokoro 2.5s linear 0s 1;
+}
+@-webkit-keyframes korokoro {
+  0%   { -webkit-transform: translate(0%, 0%); }
+  5%   { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+  25%  { -webkit-transform: translate(20%, 0%) rotate(20deg); }
+  30%  { -webkit-transform: translate(-10%, 0%) rotate(-10deg); }
+  35%  { -webkit-transform: translate(-15%, 0%) rotate(-15deg); }
+  45%  { -webkit-transform: translate(10%, 0%) rotate(10deg); }
+  50%  { -webkit-transform: translate(15%, 0%) rotate(15deg); }
+  60%  { -webkit-transform: translate(-5%, 0%) rotate(-5deg); }
+  65%  { -webkit-transform: translate(-7%, 0%) rotate(-7deg); }
+  75%  { -webkit-transform: translate(0%, 0%) rotate(0deg); }
+  100% { -webkit-transform: translate(0%, 0%) rotate(0deg); }
 }
 
-.layer-img {
-  top: 0 !important;
-  bottom: 0!important;
-  right: 0 !important;
-  margin: auto 0 !important;
-  position: absolute !important;
-} */
-
-.balloon3 {
-  /* position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 0 5px;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  color: #FFF;
-  font-size: 20px;
-  font-weight: bold;
-  background: #70a6ff;
-  border-radius: 50%;
-  box-sizing: border-box; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+@keyframes korokoro {
+  0%   { transform: translate(0%, 0%); }
+  5%   { transform: translate(10%, 0%) rotate(10deg); }
+  25%  { transform: translate(20%, 0%) rotate(20deg); }
+  30%  { transform: translate(-10%, 0%) rotate(-10deg); }
+  35%  { transform: translate(-15%, 0%) rotate(-15deg); }
+  45%  { transform: translate(10%, 0%) rotate(10deg); }
+  50%  { transform: translate(15%, 0%) rotate(15deg); }
+  60%  { transform: translate(-5%, 0%) rotate(-5deg); }
+  65%  { transform: translate(-7%, 0%) rotate(-7deg); }
+  75%  { transform: translate(0%, 0%) rotate(0deg); }
+  100% { transform: translate(0%, 0%) rotate(0deg); }
 }
 
-.pic_frame2 {
-  position: absolute;
-  top: 100;
-  left: 0;
-  right: 1300;
-  bottom: 0;
+
+
+.post {
+  position: relative;
+  top: 20%;
+  bottom: 50%;
+  left: 70%;
 }
+
 
 .fukidashi_bird {
   position: absolute;
@@ -63,7 +62,16 @@ body {
   left: 0;
   right: 1300;
   bottom: 0;
+
+
+.botan{
+  position: relative;
+  top: 10%;
+  bottom: 45%;
+  left: 0.005%;
 }
+
+
 
 .fukidashi {
   position: absolute;
@@ -84,9 +92,7 @@ img, div {
   margin: auto;
 }
 
-/* .esa {
-  position: ;
-} */
+
 
 /* div {
   position: absolute;
@@ -120,30 +126,3 @@ img, div {
   position: absolute !important;
 } */
 
-.balloon3 {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0;
-  padding: 0 5px;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
-  text-align: center;
-  color: #FFF;
-  font-size: 20px;
-  font-weight: bold;
-  background: #70a6ff;
-  border-radius: 50%;
-  box-sizing: border-box;
-}
-
-.balloon3:before {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  margin-left: -15px;
-  border: 15px solid transparent;
-  border-top: 15px solid #70a6ff;
-  z-index: 0;
-}
