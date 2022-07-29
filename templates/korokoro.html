@@ -68,7 +68,8 @@
     <!--  エネちゃんの画像 -->
     <!-- <img id="mitarashi" class="korokoro" src="{% static 'images/happy_earth.png' %}" width="400" height="400"> -->
     <img id="mitarashi" class="korokoro" width="400" height="400">
-    <img src="{% static 'images/fukidashi.png' %}" class="fukidashi" width="500" height="200">
+    <img id="fukidashi" class="fukidashi" width="500" height="200">
+    <img class="fukidashi_bird" src="{% static 'images/fukidashi_bird.png' %}"  width="200" height="200">
 
 
     <!-- ポストの画像 -->
@@ -90,6 +91,7 @@
       // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
       looopAnimation("mitarashi", "korokoro", 100);
       getImage("mitarashi");
+      getFukidashi("fukidashi");
     </script>
   </body>
 </html>

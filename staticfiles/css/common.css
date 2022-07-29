@@ -48,6 +48,15 @@ body {
   bottom: 0;
 }
 
+.fukidashi_bird {
+  position: absolute;
+  top: 100;
+  left: 550;
+  right: 0;
+  bottom: 600;
+}
+
+
 .pic_frame {
   position: absolute;
   top: 100;
