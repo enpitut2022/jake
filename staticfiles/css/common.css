@@ -47,6 +47,23 @@ body {
 }
 
 
+.fukidashi_bird {
+  position: absolute;
+  top: 100;
+  left: 550;
+  right: 0;
+  bottom: 600;
+}
+
+
+.pic_frame {
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 1300;
+  bottom: 0;
+
+
 .botan{
   position: relative;
   top: 10%;

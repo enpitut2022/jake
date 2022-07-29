@@ -26,3 +26,17 @@ function getImage(id){
   var a = Math.floor(Math.random() * arr.length);
   obj.src = arr[a];
 }
+
+function getFukidashi(id){
+  //画像ファイル名を配列で保持
+  var arr = [];
+  for (let i=1; i<14;i++){
+    arr.push('/static/images/'+i+"_tips.png")
+  }
+  // var arr = ['/static/images/.png', '/static/images/confidence_earth.png', '/static/images/cry_earth.png'];
+ 
+  //ランダムで画像ファイルを取得して表示する
+  var obj = document.getElementById(id);
+  var a = Math.floor(Math.random() * arr.length);
+  obj.src = arr[a];
+}
