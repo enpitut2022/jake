@@ -52,23 +52,42 @@
       left: 80%;
     }
 
+    /* .pic_frame {
+      display: inline-block;
+      text-align: center;
+    }
+
+    table{
+      text-align: center;
+    } */
+
   </style>
   <script src="{% static 'js/common.js' %}"></script>
 </head>
-<body>
-  <div class="shadow"></div>
-  <img id="mitarashi" class="korokoro" src="{% static 'images/mitarashi_happy.png' %}" width="400" height="400">
-  <img src="{% static 'images/fukidashi.png' %}" class="fukidashi" width="300" height="300">
-  <!-- <div class="layer">
-    <div class="layer-in"> -->
-  <div class="contents"><a href="{% url 'post_create' %}"><img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></a></div>
-    <!-- </div>> -->
-  <a href="{% url 'enechanform' %}"><img src="{% static 'images/pet_esa_sara_full.png' %}" class="esa" width="300" height="300">
-  <!-- </div>
-  </div> -->
-  <script>
-    // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
-    looopAnimation("mitarashi", "korokoro", 100);
-  </script>
-</body>
+  <body>
+    <!--  エネちゃんの画像 -->
+    <img id="mitarashi" class="korokoro" src="{% static 'images/mitarashi_happy.png' %}" width="400" height="400">
+    <img src="{% static 'images/fukidashi.png' %}" class="fukidashi" width="300" height="300">
+
+
+    <!-- ポストの画像 -->
+    <div class="contents"><a href="{% url 'post_create' %}">
+      <img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></a>
+    </div>
+
+    <!-- 節約ボタン -->
+    <!-- <div class="balloon3">
+      節約報告
+    </div> -->
+    <div class = "pic_frame">
+      <a href="{% url 'enechanform' %}"><img src="{% static 'images/setuyaku.png' %}" class="esa" width="200" height="300">
+      </a>
+      <p class="pic_frame2"> 節約報告</p>
+    </div>
+
+    <script>
+      // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
+      looopAnimation("mitarashi", "korokoro", 100);
+    </script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-from django.views.generic import TemplateView, CreateView
+from django.views.generic import TemplateView, CreateView, ListView
 #from flask import template_rendered
 #from regex import template
 from django.shortcuts import render
@@ -29,3 +29,7 @@ class PostView(CreateView):
 
 class PostCompleteView(TemplateView):
     template_name = 'post_create_complete.html'
+
+# class PostListView(ListView):
+#     template_name = 'post_list.html'
+#     model = Post
