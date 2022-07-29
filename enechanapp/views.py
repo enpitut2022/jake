@@ -25,7 +25,7 @@ class AngryView(TemplateView):
 class PostView(CreateView):
     template_name = 'post_create.html'
     form_class = forms.PostFrom
-    success_url = reverse_lazy('post:post_create_complete')
+    success_url = reverse_lazy('post_create_comlete')
 
 class PostCompleteView(TemplateView):
     template_name = 'post_create_complete.html'
