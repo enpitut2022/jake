@@ -39,7 +39,7 @@
     }
 
     .contents {
-    width: 100% ;
+    width:  100% ;
     height: 100%;
     background-color: transparent;
     position: relative;
@@ -66,14 +66,14 @@
 </head>
   <body>
     <!--  エネちゃんの画像 -->
-    <img id="mitarashi" class="korokoro" src="{% static 'images/happy_earth.png' %}" width="400" height="400">
-    <!-- <img id="mitarashi" class="korokoro" width="400" height="400"> -->
-    <img src="{% static 'images/fukidashi.png' %}" class="fukidashi" width="300" height="300">
+    <!-- <img id="mitarashi" class="korokoro" src="{% static 'images/happy_earth.png' %}" width="400" height="400"> -->
+    <img id="mitarashi" class="korokoro" width="400" height="400">
+    <img src="{% static 'images/fukidashi.png' %}" class="fukidashi" width="500" height="200">
 
 
     <!-- ポストの画像 -->
-    <div class="contents"><a href="{% url 'post_create' %}">
-      <img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></a>
+    <div class="contents">
+      <a href="{% url 'post_create' %}"><img src="{% static 'images/post.png' %}" class="layer-img" width="250" height="450"></a>
     </div>
 
     <!-- 節約ボタン -->
@@ -81,7 +81,7 @@
       節約報告
     </div> -->
     <div class = "pic_frame">
-      <a href="{% url 'enechanform' %}"><img src="{% static 'images/setuyaku.png' %}" class="esa" width="200" height="300">
+      <a href="{% url 'enechanform' %}"><img src="{% static 'images/setuyaku.png' %}" class="esa" width="200" height="200">
       </a>
       <p class="pic_frame2"> 節約報告</p>
     </div>
@@ -89,7 +89,7 @@
     <script>
       // ID値「mitarashi」に対してCSSアニメ―ション「korokoro」を100ミリ秒の間隔を空けてループ再生
       looopAnimation("mitarashi", "korokoro", 100);
-      //getImage("mitarashi")
+      getImage("mitarashi");
     </script>
   </body>
 </html>

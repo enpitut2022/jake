@@ -15,7 +15,11 @@ function looopAnimation(id, className, delay) {
 
 function getImage(id){
   //画像ファイル名を配列で保持
-  var arr = ['images/angry_earth.png', 'images/confidence_earth.png', 'images/cry_earth.png'];
+  var arr = [];
+  for (let i=1; i<21;i++){
+    arr.push('/static/images/'+i+".png")
+  }
+  // var arr = ['/static/images/.png', '/static/images/confidence_earth.png', '/static/images/cry_earth.png'];
  
   //ランダムで画像ファイルを取得して表示する
   var obj = document.getElementById(id);
